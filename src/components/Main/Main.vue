@@ -1,10 +1,13 @@
 
 <script>
-import MainJumbo from './MainJumbo.vue';
+import SectionJumbo from './SectionJumbo.vue';
+import SectionForm from './SectionForm.vue';
+
 export default {
   name: 'main',
   components: {
-    MainJumbo
+    SectionJumbo,
+    SectionForm
   }
 }
 </script>
@@ -13,7 +16,8 @@ export default {
   
   <main>
 
-    <MainJumbo />
+    <SectionJumbo />
+    <SectionForm />
 
   </main>
 

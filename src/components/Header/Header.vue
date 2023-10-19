@@ -54,7 +54,7 @@ header {
 
   .top {
     font-size: $sm-size;
-    font-weight: 600;
+    font-weight: $fw-600;
     color: $dark-gray;
     background-color: $black;
   }
@@ -73,7 +73,7 @@ header {
     }
     a {
     text-decoration: none;
-    font-size: $nav-size;
+    font-size: $main-size;
     font-weight: 700;
     color: $white;
     &:active, &:focus, &:hover {
@@ -83,9 +83,4 @@ header {
   }
 
   }
-
-
-.debug {
-  border: 1px solid white;
-}
 </style>
