@@ -43,6 +43,7 @@ export default {
   border: 0px !important;
   position: absolute;
   top: -80px;
+  left: 50px;
   padding: 20px 35px;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   h3 {
@@ -66,6 +67,8 @@ export default {
     background-position: 98%;
   }
 }
+
+
 
 
 </style>

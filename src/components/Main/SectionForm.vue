@@ -41,7 +41,7 @@ section#form .text {
   h2 {
     padding: 1.5rem 0;
     color: $black;
-    font-weight: 600;
+    font-weight: $fw-600;
   }
   p {
     color: $dark-gray;
@@ -55,7 +55,5 @@ section#form .text {
     line-height: 25px;
   }
 }
-
-
 
 </style>
