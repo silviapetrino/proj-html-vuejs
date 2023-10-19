@@ -40,12 +40,10 @@ export default {
 
 @use '../../scss/main.scss' as *;
 .card {
-  border: 0px !important;
   position: absolute;
   top: -80px;
   left: 50px;
   padding: 20px 35px;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
   h3 {
   color: $main-color;
   font-weight: $fw-600;
@@ -53,7 +51,7 @@ export default {
   }
   p:first-of-type {
     color: $dark-gray;
-    font-size: $size-13;
+    font-size: $sm-size-b;
   }
   input {
     background-color: #F7F7F7;

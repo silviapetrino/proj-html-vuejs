@@ -18,7 +18,9 @@ import Form from '../partials/Form.vue';
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, dolorem? Dolore excepturi aliquid molestiae quae, obcaecati magnam adipisci ipsa consectetur architecto esse nam unde deserunt delectus labore aspernatur doloremque eius?</p>
     </div>
     <div class="form-box">
+      <!-- Inside, there is the form component.  -->
       <Form />
+
     </div>
     
   </div>
@@ -51,7 +53,7 @@ section#form .text {
     line-height: 30px;
   }
   p:last-of-type{
-    font-size: $size-13;
+    font-size: $sm-size-b;
     line-height: 25px;
   }
 }
