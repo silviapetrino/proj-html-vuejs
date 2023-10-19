@@ -23,7 +23,7 @@
         </div>
         <nav class="mt-2">
           <ul>
-           
+           <!-- lista da stampare dinamicamente  -->
             <li class="pb-1"><a href="#">Home</a></li>
             <li class="pb-1"><a href="#">About</a></li>
             <li class="pb-1"><a href="#">Prices</a></li>
@@ -32,7 +32,7 @@
             <li class="pb-1"><a href="#">Blog</a></li>
           </ul>
         </nav>
-        
+        <!-- componente da creare -->
         <button>componente</button>
       </div>
     </div>
