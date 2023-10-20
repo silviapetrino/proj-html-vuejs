@@ -61,6 +61,11 @@ export default {
   border-radius: 8px;
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
   background-color: $white;
+  cursor: pointer;
+  transition: all .1s ease;
+  &:hover {
+    transform: scale(1.1);
+  }
   span.rate {
     text-transform: uppercase;
     color: $dark-gray;
