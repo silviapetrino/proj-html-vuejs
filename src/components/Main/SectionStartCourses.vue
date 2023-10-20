@@ -1,9 +1,15 @@
 <script>
 import CoursesInfo from '../partials/CoursesInfo.vue';
 import LearnMore from '../partials/LearnMore.vue';
+import cardsCourses from '../../data/cardsCourses';
 
 export default {
   name: 'start-courses',
+  data(){
+    return{
+      cardsCourses
+    }
+  },
   components: {
     CoursesInfo,
     LearnMore
@@ -32,7 +38,7 @@ export default {
     <div class="bottom">
       <div class="container-sp d-flex">
         <CoursesInfo />
-        <LearnMore />
+        <LearnMore v-for="(item, index) in cardsCourses" :key="`item${index}`" :cardObj="item"/>
      
       </div>
     </div>

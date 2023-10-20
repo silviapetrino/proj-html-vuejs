@@ -1,8 +1,11 @@
-
 <script>
 import LearnMoreBtn from './buttons/LearnMoreBtn.vue';
+
 export default {
   name: 'learn-more',
+  props: {
+    cardObj: Object
+  },
   components: {
     LearnMoreBtn
   }
@@ -11,9 +14,9 @@ export default {
 
 <template>
 
-  <div class="box d-flex flex-column text-center align-items-center p-5">
-    <img src="/public/courses-passplus-200x200.jpg" alt="courses-passpluss" width="180">
-    <span class="d-inline-block py-2">Pass Plus</span>
+  <div class="box d-flex flex-column text-center align-items-center ps-5 py-5">
+    <img :src="cardObj.image" alt="courses-passpluss" width="180">
+    <span class="d-inline-block py-2">{{ cardObj.info }}</span>
     <LearnMoreBtn />
   </div>
 
