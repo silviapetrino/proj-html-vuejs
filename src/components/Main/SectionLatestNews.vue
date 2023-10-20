@@ -1,7 +1,6 @@
 <script>
 import news from '../../data/news';
 
-
 export default {
   name: 'latest-news-section',
   data() {
@@ -17,21 +16,26 @@ export default {
   <section id="latest-news">
     <div class="container-sp">
 
-      <div class="card-sp text-center">
+      <div class="card-sp text-center pb-5">
+
         <h2 class="py-4">Latest News</h2>
+
         <div class="wrapper d-flex justify-content-center gap-5">
           <div class="news-box debug d-flex flex-column text-center" v-for="(newItem, index) in news" :key="`news-${index}`">
-          <img :src="newItem.image" :alt="newItem.title" width="450">
-          <h4 class="title py-2">{{ newItem.title }}</h4>
-          <div class="date-comment">
-            <span class="date">{{ newItem.date }} &#124; </span>
-            <span class="comments">{{ newItem.comments + ' ' + 'comments' }}</span>
-          </div>  
-          <span class="abstract">{{ newItem.abstract }}</span>
+            <img :src="newItem.image" :alt="newItem.title" width="450">
+            <h4 class="title py-2">{{ newItem.title }}</h4>
+            <div class="date-comment pb-2">
+              <span class="date">{{ newItem.date }} &#124; </span>
+              <span class="comments">{{ newItem.comments + ' ' + 'comments' }}</span>
+            </div>  
+            <span class="abstract">{{ newItem.abstract }}</span>
+          </div>
         </div>
-        </div>
-      
+        <!-- Inserire componente bottone  -->
       </div>
+
+      <img width="1100" class="arrow" src="/latestnews-bottom.png" alt="latest-news-background">
+
     </div>
   </section>
 </template>
@@ -39,21 +43,22 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/main.scss' as *;
 
+section#latest-news {
+  background-image: url('/latestnews-background.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
 .card-sp {
   width: 100%;
   overflow: hidden;
   border-top: 5px solid $main-color;
   border-radius: 8px;
-  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.3);
   background-color: $white;
   cursor: pointer;
-  transition: all .1s ease;
   position: relative;
   top: -30px;
 
-  &:hover {
-    transform: scale(1.1);
-  }
   h2 {
     font-weight: $fw-600;
     color: $black;
@@ -71,5 +76,13 @@ export default {
   .date, .comments {
     font-size: $sm-size-b;
   }
+
 }
+
+img.arrow {
+  width: 100%;
+  position: relative;
+  top: -30px;
+}
+
 </style>
