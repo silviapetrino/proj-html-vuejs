@@ -34,7 +34,7 @@ export default {
       </div>
     </div>
 
-    <!-- inside, there are the CoursesInfo card component and the learn more cards -->
+    <!-- inside, there are the CoursesInfo card component and the learn more cards components -->
     <div class="bottom">
       <div class="container-sp d-flex">
 

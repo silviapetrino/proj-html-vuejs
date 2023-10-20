@@ -21,11 +21,12 @@ export default {
 
       <!-- the prop percentage is from component: CircleRanges!  -->
 
-      <CircleRanges :percentage="percentage"/>
+      <!-- Nb. se la percentuale è definita, la card generica inserisce la il compontente cicle con la relativa percentuale  -->
+
+      <CircleRanges v-if="percentage != null" :percentage="percentage"/>
     
       <span>{{ rate }}</span>
   
-
     </div>
   </div>
 

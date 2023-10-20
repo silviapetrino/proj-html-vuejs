@@ -3,13 +3,17 @@
 import SectionJumbo from './SectionJumbo.vue';
 import SectionForm from './SectionForm.vue';
 import SectionStartCourses from './SectionStartCourses.vue';
+import SectionRate from './SectionRate.vue';
+import SectionInstructors from './SectionInstructors.vue';
 
 export default {
   name: 'main',
   components: {
     SectionJumbo,
     SectionForm,
-    SectionStartCourses
+    SectionStartCourses,
+    SectionRate,
+    SectionInstructors
   }
 }
 </script>
@@ -21,6 +25,8 @@ export default {
     <SectionJumbo />
     <SectionForm />
     <SectionStartCourses />
+    <SectionRate />
+    <SectionInstructors />
 
   </main>
 
