@@ -6,6 +6,7 @@ export default {
 
 
 <template>
+
   <div class="wrapper-card">
     <div id="courses-info" class="card">
     <img src="/public/new-corner.jpg" alt="new" width="100">
@@ -15,9 +16,8 @@ export default {
     </div>
   </div>
 
- 
        <!-- inserire componente bottone  -->
-      
+
    
 </div>
 

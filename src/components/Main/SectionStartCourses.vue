@@ -37,16 +37,18 @@ export default {
     <!-- inside, there are the CoursesInfo card component and the learn more cards -->
     <div class="bottom">
       <div class="container-sp d-flex">
+
         <CoursesInfo />
+
         <LearnMore v-for="(item, index) in cardsCourses" :key="`item${index}`" :cardObj="item"/>
      
       </div>
     </div>
+
     <svg class="fusion-big-triangle-candy" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none" style="fill:#e4eaed;padding:0;"><path d="M-1 -1 L50 99 L101 -1 Z"></path></svg>
 
 
   </section>
-
 
 
 </template>
