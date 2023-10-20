@@ -1,5 +1,7 @@
 
 <script>
+import testimonialsCarousel from '../../data/testimonialsCarousel';
+
 export default {
   name: 'Section-testimonials',
   data(){
@@ -10,10 +12,18 @@ export default {
         `<button class="dot"></button>`,
         `<button class="dot"></button>`,
         `<button class="dot"></button>`,
-        ]
+        ],
+        testimonialsCarousel,
+        currentIndex: 0
+    }
+  },
+  methods: {
+    nextSlide(index){
+        this.currentIndex = index;
+      }
     }
   }
-}
+
 </script>
 
 <template>
@@ -25,11 +35,14 @@ export default {
     <p>Here's what our drivers had to say about our services:</p>
 
     <div class="carousel-testimonials">
-      <img src="/testimonial-sophia.png" alt="sofia-photo" width="150">
-      <p class="quote py-4"><em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        <br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em></p>
-      <div class="name py-2">Sofia Jones</div>
-      <button v-for="(dot, index) in this.dots" :key="`dot${index}`" class="dot d-inline-block"></button>
+
+      <div v-for="(testimonial, index) in testimonialsCarousel" :key="`test${index}`" class="slide" :class="{ hide: index !== currentIndex }">
+        <img :src="testimonial.photo" alt="sofia-photo" width="150">
+        <p class="quote py-4">{{ testimonial.quote }}</p>
+        <div class="name py-2">{{ testimonial.name }}</div>
+      </div>
+      
+      <button @click="nextSlide(index)" v-for="(dot, index) in this.dots" :key="`dot${index}`" class="dot d-inline-block"></button>
     </div>
   </div>
  </section>
@@ -63,11 +76,15 @@ section#testimonials {
     font-weight: $fw-600;
   }
 
+  .hide {
+    display: none;
+  }
+
   .carousel-testimonials {
     .dot {
       width: 12px;
       height: 12px;
-      margin: 3px;
+      margin: 5px;
       border-radius: 50%;
       border: 1px solid $dark-gray;
       cursor: pointer;

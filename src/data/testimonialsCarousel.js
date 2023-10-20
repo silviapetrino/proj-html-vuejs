@@ -1,27 +1,27 @@
 export default [
   {
     photo: '/testimonial-sophia.png',
-    quote: '<em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em>',
-    name: 'Sophia'
+    quote: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?',
+    name: 'Sophia Jones'
   },
   {
     photo: '/testimonial-kate.png',
-    quote: '<em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em>',
-    name: 'Kate'
+    quote: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?',
+    name: 'Kate Harry'
   },
   {
     photo: '/testimonial-grant.png',
-    quote: '<em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em>',
-    name: 'Grant'
+    quote: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?',
+    name: 'Grant Middle'
   },
   {
     photo: '/testimonial-kelly.png',
-    quote: '<em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em>',
-    name: 'Kelly'
+    quote: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?',
+    name: 'Kelly Smith'
   },
   {
     photo: '/testimonial-harold.png',
-    quote: '<em>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?</em>',
-    name: 'Harold'
+    quote: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam unde fuga voluptatibus dolores saepe culpa similique architecto? Assumenda, doloribus?',
+    name: 'Harold Jackson'
   },
 ]
