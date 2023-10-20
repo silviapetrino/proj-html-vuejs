@@ -19,7 +19,7 @@ export default {
 
 <template>
 
-  <section id="istructors">
+  <section id="instructors" class="debug">
 
     <div class="container-sp d-flex justify-content-between">
       <div class="text-cta">
@@ -30,7 +30,7 @@ export default {
       <button>componente bottone</button>
     </div>
 
-    <div id="istructors-names" class="container-sp d-flex py-5 gap-2">
+    <div id="instructors-names" class="container-sp d-flex gap-2">
 
       <GenericCard v-for="(instructor, index) in instructorsCards" :key="`instr-${index}`" :instructorCard="instructor"/>
      
@@ -45,8 +45,15 @@ export default {
 <style lang="scss" scoped>
 @use '../../scss/main.scss' as *;
 
-section#istructors{
+section#instructors{
   padding-top: 400px;
+;
+
+  #instructors-names {
+    position: relative;
+    top: 100px;
+  }
+
   h2 {
     font-weight: $fw-600;
     color: $black;
@@ -57,7 +64,6 @@ section#istructors{
     font-size: $main-size;
     width: 75%;
   }
-
 }
 
 </style>
