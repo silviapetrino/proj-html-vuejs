@@ -5,6 +5,7 @@ import SectionStartCourses from './SectionStartCourses.vue';
 import SectionRate from './SectionRate.vue';
 import SectionInstructors from './SectionInstructors.vue';
 import SectionTestimonials from './SectionTestimonials.vue';
+import SectionLatestNews from './SectionLatestNews.vue';
 
 export default {
   name: 'main',
@@ -14,7 +15,8 @@ export default {
     SectionStartCourses,
     SectionRate,
     SectionInstructors,
-    SectionTestimonials
+    SectionTestimonials,
+    SectionLatestNews
   }
 }
 </script>
@@ -29,14 +31,14 @@ export default {
     <SectionRate />
     <SectionInstructors />
     <SectionTestimonials />
+    <SectionLatestNews />
 
   </main>
 
 
 </template>
 
-<style lang="scss" scoped>
-
+<style>
 
 
 </style>

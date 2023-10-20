@@ -1,15 +1,21 @@
 <script>
 import CircleRanges from './other-graphic-elements/CircleRanges.vue';
+import news from '../../data/news';
 
 export default {
   name: 'generic-card',
   props: {
     percentage: Number,
     rate: String,
-    instructorCard : Array 
+    instructorCard : Object,
   },
   components: {
     CircleRanges
+  },
+  data(){
+    return{
+      news
+    }
   }
 }
 </script>
@@ -18,6 +24,7 @@ export default {
   
 
   <div class="wrapper-card">
+
     <div class="card-sp">
 
 <!-- **************CARD WITH RANGE ********* -->
@@ -34,14 +41,17 @@ export default {
       <!-- Nb. se è presente l'array istructors, la card generica inserisce la i dati degli instructors importati nella Section Instructors  -->
 
       <div v-if="instructorCard" class="instructors d-flex flex-column justify-content-center align-items-center py-5">
-        <img :src="instructorCard.photo" :alt="instructorCard.name" width="300">
+        <img :src="instructorCard.photo" :alt="instructorCard.name" width="500">
         <h5 class="name pt-4">{{ instructorCard.name }}</h5>
         <!-- inserire componente social  -->
         <div>SOCIAL</div>
         <p class="description text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, labore.</p>
       </div>
-  
-    </div>
+
+  <!-- **************CARD WITH LATEST NEWS ********* -->
+
+  </div>
+    
   </div>
 
 
@@ -66,11 +76,14 @@ export default {
   &:hover {
     transform: scale(1.1);
   }
+
+   // **************CARDS RATE ********* 
   span.rate {
     text-transform: uppercase;
     color: $dark-gray;
     font-weight: $fw-600;
-  }
+  } 
+  // **************CARDS ISTRUCTOR ********* 
   h5.name {
     color: $black;
     font-weight: $fw-600;
@@ -81,9 +94,13 @@ export default {
     line-height: 25px;
     padding: 20px;
   }
+ 
+
+
+ 
 }
 
-// ranges 
+ 
 
 
 </style>
