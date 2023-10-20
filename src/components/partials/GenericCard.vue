@@ -89,8 +89,6 @@ export default {
     padding: 20px;
   }
  
-
-
  
 }
 
