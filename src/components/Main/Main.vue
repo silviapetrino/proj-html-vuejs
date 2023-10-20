@@ -1,10 +1,10 @@
-
 <script>
 import SectionJumbo from './SectionJumbo.vue';
 import SectionForm from './SectionForm.vue';
 import SectionStartCourses from './SectionStartCourses.vue';
 import SectionRate from './SectionRate.vue';
 import SectionInstructors from './SectionInstructors.vue';
+import SectionTestimonials from './SectionTestimonials.vue';
 
 export default {
   name: 'main',
@@ -13,7 +13,8 @@ export default {
     SectionForm,
     SectionStartCourses,
     SectionRate,
-    SectionInstructors
+    SectionInstructors,
+    SectionTestimonials
   }
 }
 </script>
@@ -27,6 +28,7 @@ export default {
     <SectionStartCourses />
     <SectionRate />
     <SectionInstructors />
+    <SectionTestimonials />
 
   </main>
 
