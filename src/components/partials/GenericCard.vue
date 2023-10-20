@@ -1,6 +1,6 @@
 <script>
 import CircleRanges from './other-graphic-elements/CircleRanges.vue';
-import news from '../../data/news';
+
 
 export default {
   name: 'generic-card',
@@ -11,12 +11,8 @@ export default {
   },
   components: {
     CircleRanges
-  },
-  data(){
-    return{
-      news
-    }
   }
+ 
 }
 </script>
 
@@ -36,7 +32,6 @@ export default {
       </div>
       
 
-
 <!-- **************CARD WITH ISTRUCTOR ********* -->
       <!-- Nb. se è presente l'array istructors, la card generica inserisce la i dati degli instructors importati nella Section Instructors  -->
 
@@ -48,12 +43,11 @@ export default {
         <p class="description text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, labore.</p>
       </div>
 
-  <!-- **************CARD WITH LATEST NEWS ********* -->
+  
 
   </div>
     
   </div>
-
 
 
 </template>
