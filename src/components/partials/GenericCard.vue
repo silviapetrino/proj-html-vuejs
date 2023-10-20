@@ -41,7 +41,7 @@ export default {
       <!-- Nb. se è presente l'array istructors, la card generica inserisce la i dati degli instructors importati nella Section Instructors  -->
 
       <div v-if="instructorCard" class="instructors d-flex flex-column justify-content-center align-items-center py-5">
-        <img :src="instructorCard.photo" :alt="instructorCard.name" width="500">
+        <img :src="instructorCard.photo" :alt="instructorCard.name" width="300">
         <h5 class="name pt-4">{{ instructorCard.name }}</h5>
         <!-- inserire componente social  -->
         <div>SOCIAL</div>

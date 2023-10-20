@@ -76,7 +76,6 @@ section#latest-news {
   .date, .comments {
     font-size: $sm-size-b;
   }
-
 }
 
 img.arrow {
