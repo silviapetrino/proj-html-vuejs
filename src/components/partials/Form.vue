@@ -1,19 +1,23 @@
 <script>
+import CtaBtn from './buttons/CtaBtn.vue';
 export default {
-  name: 'form'
+  name: 'form',
+  components: {
+    CtaBtn
+  }
 }
 </script>
 
 
 <template>
 
-  <div class="card">
+  <div class="card d-flex flex-column text-align-center justify-content-center">
     <div class="text text-center py-3">
       <h3>First Lesson Free!</h3>
       <p>When you make a block booking with us your first lesson is included free.</p>
     </div>
     
-    <form>
+    <form class="pb-4">
       <div class="form-group">
         <input type="text" class="form-control name" placeholder="Your Name*">
       </div>
@@ -26,8 +30,8 @@ export default {
       <div class="form-group">
         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Location">
       </div>
-       <!-- inserire componente bottone  -->
-      <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+      
+      <CtaBtn :text="'request a callback'"/>
     </form>
 </div>
 
@@ -55,6 +59,7 @@ export default {
   }
   input {
     background-color: #F7F7F7;
+    color: $dark-gray;
     margin: 20px 0;
     padding: 10px;
     font-size: $sm-size;
@@ -64,6 +69,10 @@ export default {
     background-repeat: no-repeat;
     background-position: 98%;
   }
+  .cta {
+    margin: 0 100px;
+  }
+ 
 }
 
 

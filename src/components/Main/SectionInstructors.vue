@@ -2,11 +2,13 @@
 <script>
 import GenericCard from '../partials/GenericCard.vue';
 import instructorsCards from '../../data/instructorsCards';
+import CtaBtn from '../partials/buttons/CtaBtn.vue';
 
 export default {
   name: 'Your-instructors-section',
   components: {
-    GenericCard
+    GenericCard,
+    CtaBtn
   },
   data(){
     return{
@@ -19,15 +21,15 @@ export default {
 
 <template>
 
-  <section id="instructors" class="debug">
+  <section id="instructors">
 
-    <div class="container-sp d-flex justify-content-between">
+    <div class="container-sp d-flex">
+
       <div class="text-cta">
         <h2 class="py-3">your instructors</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro mollitia asperiores blanditiis quas iusto! Voluptatibus unde et modi accusantium error.</p>
       </div>
-    <!-- bottone componente da inserire  -->
-      <button>componente bottone</button>
+      <div class="box-btn"><CtaBtn :text="'more about us'"/></div>
     </div>
 
     <div id="instructors-names" class="container-sp d-flex gap-2">
@@ -47,7 +49,7 @@ export default {
 
 section#instructors{
   padding-top: 400px;
-;
+
 
   #instructors-names {
     position: relative;
@@ -62,7 +64,13 @@ section#instructors{
   p {
     color: $dark-gray;
     font-size: $main-size;
-    width: 75%;
+    width: 55%;
+  }
+  .debug {
+    border: 1px solid black;
+  }
+  .cta {
+    width: 400px;
   }
 }
 

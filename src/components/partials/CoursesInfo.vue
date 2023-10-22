@@ -1,6 +1,10 @@
 <script>
+import CtaBtn from './buttons/CtaBtn.vue';
 export default {
-  name: 'card-courses-info'
+  name: 'card-courses-info',
+  components: {
+    CtaBtn
+  }
 }
 </script>
 
@@ -12,11 +16,12 @@ export default {
     <img src="/public/new-corner.jpg" alt="new" width="100">
     <div class="text text-center py-3">
       <h2>Courses</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi minima cumque magni sequi aspernatur laborum, dolor perferendis? Ipsa ex perferendis, voluptatibus nostrum error ab esse delectus maxime incidunt itaque ducimus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi minima cumque magni sequi aspernatur laborum, dolor perferendis? Ipsa ex perferendis, voluptatibus nostrum error ab esse</p>
     </div>
+    <CtaBtn :text="'course information'" />
   </div>
 
-       <!-- inserire componente bottone  -->
+    
 
    
 </div>
@@ -31,7 +36,7 @@ export default {
 
 .card{
   width: 400px;
-  padding: 20px;
+  padding: 30px 20px 50px 20px;
   position: relative;
   top: -20px;
   overflow: hidden;
@@ -50,6 +55,9 @@ export default {
     font-size: $sm-size-b;
     line-height: 25px;
     padding: 20px;
+  }
+  .cta {
+    margin: 0 60px;
   }
 }
 

@@ -1,6 +1,10 @@
 <script>
+import CtaBtn from '../partials/buttons/CtaBtn.vue';
 export default {
-  name: 'subscribe'
+  name: 'subscribe',
+  components: {
+    CtaBtn
+  }
 }
 </script>
 
@@ -11,7 +15,7 @@ export default {
       <div class="col-8">
         <h3 class="py-3">Sign up to our Newsletter</h3>
         <input type="email" id="email">
-           <!-- inserisci componente bottone  -->
+           <CtaBtn :text="'subscribe'"/>
         <p class="py-4">&#10098;We do not share your data with anybody, and only use its intended purpose&#10099;</p>
       </div> 
     </div>
@@ -41,6 +45,11 @@ section#subscribe {
     border: 1px solid $dark-gray;
     border-radius: 3px;
     padding: 10px 0;
+  }
+
+  .cta {
+    margin-top: 30px;
+    width: 100%;
   }
 }
 

@@ -1,8 +1,11 @@
 <script>
 import news from '../../data/news';
-
+import CtaBtn from '../partials/buttons/CtaBtn.vue';
 export default {
   name: 'latest-news-section',
+  components: {
+    CtaBtn
+  },
   data() {
     return {
       news
@@ -21,7 +24,7 @@ export default {
         <h2 class="py-4">Latest News</h2>
 
         <div class="wrapper d-flex justify-content-center gap-5">
-          <div class="news-box debug d-flex flex-column text-center" v-for="(newItem, index) in news" :key="`news-${index}`">
+          <div class="news-box d-flex flex-column text-center pb-5" v-for="(newItem, index) in news" :key="`news-${index}`">
             <img :src="newItem.image" :alt="newItem.title" width="450">
             <h4 class="title py-2">{{ newItem.title }}</h4>
             <div class="date-comment pb-2">
@@ -31,7 +34,7 @@ export default {
             <span class="abstract">{{ newItem.abstract }}</span>
           </div>
         </div>
-        <!-- Inserire componente bottone  -->
+        <CtaBtn :text="'more from the blog'"/>
       </div>
 
       <img width="1100" class="arrow" src="/latestnews-bottom.png" alt="latest-news-background">
@@ -75,6 +78,9 @@ section#latest-news {
   }
   .date, .comments {
     font-size: $sm-size-b;
+  }
+  .cta {
+    margin: 40px 0;
   }
 }
 

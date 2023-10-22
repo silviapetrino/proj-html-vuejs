@@ -22,7 +22,7 @@ button.cta {
   background-color: $main-color;
   color: $white;
   border: 0px;
-  padding: 10px 25px;
+  padding: 8px 25px;
   border-radius: 25px;
   text-transform: uppercase;
   font-weight: $fw-700;
