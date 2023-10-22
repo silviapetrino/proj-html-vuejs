@@ -1,6 +1,10 @@
 <script>
+  import CtaBtn from '../partials/buttons/CtaBtn.vue';
   export default {
-    name: 'Header'
+    name: 'Header',
+    components: {
+      CtaBtn
+    }
   }
 </script>
 <template>
@@ -30,10 +34,10 @@
             <li class="pb-1"><a href="#">Courses</a></li>
             <li class="pb-1"><a href="#">Locations</a></li>
             <li class="pb-1"><a href="#">Blog</a></li>
+            <CtaBtn :text="'book now'"/>
           </ul>
         </nav>
         <!-- componente da creare -->
-        <button>componente</button>
       </div>
     </div>
     
