@@ -32,9 +32,9 @@ Prima di arrivare al footer, ho creato un componente "BtnCta" (bottone call to a
 Ho strutturato il footer, utilizzando il file "navsMenu.js" per rendere dinamiche le navigazioni, con array distinti per l'header e i due menù del footer.
 
 - Ho creato un file .js per gestire i social della pagina, con array distinti per la sezione degli istruttori e il footer.
-Dettagli Grafici:
 
-- Ho lavorato su elementi grafici minori, come la freccia "chevron" nel footer e i pulsanti in alto a destra.
+- Dettagli Grafici:
+ Ho lavorato su elementi grafici minori, come la freccia "chevron" nel footer e i pulsanti in alto a destra.
 
 
       
