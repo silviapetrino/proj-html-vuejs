@@ -24,6 +24,11 @@ export default {
     padding: 8px 18px;
     border: 3px solid $light-blue;
     border-radius: 25px;
+    &:hover {
+      color: $main-color;
+      border-color: $main-color;
+      background-color: $gray;
+    }
   }
 
 </style>

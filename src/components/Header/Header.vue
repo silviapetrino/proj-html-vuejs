@@ -92,8 +92,7 @@ header {
     color: $white;
     &:active, &:focus, &:hover {
       color: $main-color;
-    }
-  
+    } 
   }
   }
 
