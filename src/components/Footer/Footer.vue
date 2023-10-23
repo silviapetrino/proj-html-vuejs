@@ -1,7 +1,7 @@
 <script>
   import navsMenu from '../../data/navsMenu.js';
-  import CtaBtn
-   from '../partials/buttons/CtaBtn.vue';
+  import CtaBtn from '../partials/buttons/CtaBtn.vue';
+  import socials from '../../data/socials.js'
   export default {
     name: 'Footer',
     components: {
@@ -9,7 +9,8 @@
     },
     data(){
       return {
-        navsMenu
+        navsMenu,
+        socials
       }
     }
   }
@@ -27,7 +28,7 @@
         </div>
         <p class="py-2">Avada Driving School is the right choice for experienced drivers looking for a refresher course, or the brand new driver waiting to pass first time.</p>
       </div>
-            <!-- contacts list  -->
+            <!-- contacts list from datas  -->
       <div class="col text-center">
         <h4>contact details</h4>
         <nav class="contact text-start py-2">
@@ -39,7 +40,7 @@
           </ul>
         </nav>
       </div>
-       <!-- courses list  -->
+       <!-- courses list from datas -->
       <div class="col">
         <h4 class="text-center">courses</h4>
         <nav class="courses py-2">
@@ -60,8 +61,21 @@
     </div>
 
     <div class="bottom">
-      <div class="container-sp">
+      <div class="container-sp d-flex justify-content-between">
         <p>Copyright 2012-2020 &#124; Avada Theme by <a href="#">ThemeFusion</a> &#124; All Rights Reserved &#124; Powered by <a href="#">WordPress</a></p>
+        <!-- socials from datas  -->
+        <nav class="socials">
+          <ul>
+            <li class="d-inline-block mx-2" 
+            v-for="(item, index) in socials.footerSocials" 
+            :key="`ft-soc${index}`">
+            <a 
+            :href="item.href" 
+            :class="item.icon">
+            </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 
@@ -118,10 +132,11 @@ footer {
     a {
       color: $main-color;
     }
+    nav a {
+      color: $white;
+      text-decoration: none;
+    }
   }
-.debug {
-  border: 1px solid white;
-}
 } 
 
 </style>

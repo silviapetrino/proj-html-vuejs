@@ -1,6 +1,6 @@
 <script>
 import CircleRanges from './other-graphic-elements/CircleRanges.vue';
-
+import socials from '../../data/socials.js';
 
 export default {
   name: 'generic-card',
@@ -11,8 +11,12 @@ export default {
   },
   components: {
     CircleRanges
+  },
+  data(){
+    return {
+      socials
+    }
   }
- 
 }
 </script>
 
@@ -39,7 +43,13 @@ export default {
         <img :src="instructorCard.photo" :alt="instructorCard.name" width="300">
         <h5 class="name pt-4">{{ instructorCard.name }}</h5>
         <!-- inserire componente social  -->
-        <div>SOCIAL</div>
+        <nav class="text-center">
+          <ul class="d-flex px-2">
+            <li class="d-inline-block px-2" v-for="(item, index) in socials.socialsIstructors" :key="`soc-in${index}`">
+              <a :href="item.href"><i :class="item.icon"></i></a>
+            </li>
+          </ul>
+        </nav>
         <p class="description text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, labore.</p>
       </div>
 
@@ -88,7 +98,13 @@ export default {
     line-height: 25px;
     padding: 20px;
   }
+  li a {
+    color: $dark-gray;
+  }
  
+  .debug {
+    border: 1px solid black;
+  }
  
 }
 
