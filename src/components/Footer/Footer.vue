@@ -60,7 +60,9 @@
     </div>
 
     <div class="bottom">
-      <div class="container-sp">bottom</div>
+      <div class="container-sp">
+        <p>Copyright 2012-2020 &#124; Avada Theme by <a href="#">ThemeFusion</a> &#124; All Rights Reserved &#124; Powered by <a href="#">WordPress</a></p>
+      </div>
     </div>
 
   </footer>
@@ -108,6 +110,15 @@ footer {
   }
 
 }
+
+  .bottom {
+    background-color: $foot-black;
+    color: $dark-gray;
+    font-size: $main-size;
+    a {
+      color: $main-color;
+    }
+  }
 .debug {
   border: 1px solid white;
 }
