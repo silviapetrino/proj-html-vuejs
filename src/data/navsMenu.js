@@ -1,4 +1,30 @@
 export default {
+    headerNavMenu: [
+    {
+      href: "#",
+      content: 'Home'
+    },
+    {
+      href: "#",
+      content: 'About'
+    },
+    {
+      href: "#",
+      content: 'Prices'
+    },
+    {
+      href: "#",
+      content: 'Courses'
+    },
+    {
+      href: "#",
+      content: 'Locations'
+    },
+    {
+      href: "#",
+      content: 'Blog'
+    }
+  ],
   footerContacts: [
     {
       icon: "fa-solid fa-house",

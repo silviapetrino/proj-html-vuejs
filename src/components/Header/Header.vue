@@ -1,15 +1,22 @@
 <script>
   import CtaBtn from '../partials/buttons/CtaBtn.vue';
+  import navsMenu from '../../data/navsMenu.js';
   export default {
     name: 'Header',
     components: {
       CtaBtn
+    },
+    data (){
+      return {
+        navsMenu
+      }
     }
   }
 </script>
 <template>
   
   <header>
+           <!-- header top  -->
     <div class="top">
       <div class="container-sp d-flex justify-content-between py-2 align-items-center">
         <p class="my-1">We have a 95% Sucessful Pass Rate!</p>
@@ -19,28 +26,30 @@
         </div>
       </div>
     </div>
+        <!-- /header top  -->
+        <!-- header bottom  -->
     <div class="bottom">
       <div class="container-sp d-flex justify-content-between py-2">
     
         <div class="logo pt-1">
           <img src="/avada-drivers-logo-2x-200x39.png" alt="logo-avada-driving-school">
         </div>
+
         <nav class="mt-2">
           <ul>
-           <!-- lista da stampare dinamicamente  -->
-            <li class="pb-1"><a href="#">Home</a></li>
-            <li class="pb-1"><a href="#">About</a></li>
-            <li class="pb-1"><a href="#">Prices</a></li>
-            <li class="pb-1"><a href="#">Courses</a></li>
-            <li class="pb-1"><a href="#">Locations</a></li>
-            <li class="pb-1"><a href="#">Blog</a></li>
+            <li v-for="(item, index) in navsMenu.headerNavMenu" 
+            :key="`head-${index}`" 
+            class="pb-1">
+            <a :href="item.href">{{ item.content }}</a>
+            </li>
+            <!-- cta button component  -->
             <CtaBtn :text="'book now'"/>
           </ul>
         </nav>
-        <!-- componente da creare -->
+
       </div>
     </div>
-    
+     <!-- /header bottom  -->
   </header>
 
 
