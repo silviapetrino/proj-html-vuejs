@@ -11,7 +11,6 @@ export default {
       news
     };
   }
- 
 }
 </script>
 

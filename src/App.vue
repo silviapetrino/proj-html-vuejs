@@ -13,11 +13,11 @@ export default {
 </script>
 
 <template>
+  
   <Header />
   <Main />
   <Footer />
   
-
 </template>
 
 
@@ -30,10 +30,3 @@ export default {
 
 </style>
 
-
-<!-- TODO -->
-<!--0. footer  -->
-<!--1. Botton component -->
-<!--2. dynamic nav + bedge-btn near courses -->
-<!--3. socials -->
-<!--4. hover to learn more buttons -->

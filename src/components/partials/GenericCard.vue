@@ -42,7 +42,7 @@ export default {
       <div v-if="instructorCard" class="instructors d-flex flex-column justify-content-center align-items-center py-5">
         <img :src="instructorCard.photo" :alt="instructorCard.name" width="300">
         <h5 class="name pt-4">{{ instructorCard.name }}</h5>
-        <!-- inserire componente social  -->
+      
         <nav class="text-center">
           <ul class="d-flex px-2">
             <li class="d-inline-block px-2" v-for="(item, index) in socials.socialsIstructors" :key="`soc-in${index}`">
