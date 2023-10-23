@@ -1,10 +1,13 @@
 <script>
   import CtaBtn from '../partials/buttons/CtaBtn.vue';
   import navsMenu from '../../data/navsMenu.js';
+  import DemosAndOnSaleBtns from '../partials/buttons/DemosAndOnSaleBtns.vue';
+
   export default {
     name: 'Header',
     components: {
-      CtaBtn
+      CtaBtn,
+      DemosAndOnSaleBtns
     },
     data (){
       return {
@@ -51,6 +54,8 @@
       </div>
     </div>
      <!-- /header bottom  -->
+     <!-- btns -->
+     <DemosAndOnSaleBtns />
   </header>
 
 
@@ -76,6 +81,7 @@ header {
     color: $white;
     background-color: rgba(10, 10, 10, 0.5);
     padding: 10px;
+    position: relative;
   }
   li{
     display: inline-block;
