@@ -76,6 +76,8 @@
             </li>
           </ul>
         </nav>
+
+        <a href="#jumbo"><i class="fa-solid fa-chevron-up up"></i></a>
       </div>
     </div>
 
@@ -90,6 +92,7 @@
 footer {
   .container-sp {
     padding: 5rem 0;
+    position: relative;
   }
   .top {
   background-image: url('/footer-background-color.jpg');
@@ -129,12 +132,21 @@ footer {
     background-color: $foot-black;
     color: $dark-gray;
     font-size: $main-size;
+    
     a {
       color: $main-color;
     }
     nav a {
       color: $white;
       text-decoration: none;
+    }
+    .up {
+      position: absolute;
+      bottom: 0;
+      left: 120%;
+      padding: 15px 20px;
+      border-radius: 5px;
+      background-color: $black;
     }
   }
 } 
