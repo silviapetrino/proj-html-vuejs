@@ -36,9 +36,10 @@ section#jumbo {
   h1 {
     font-weight: 600;
     letter-spacing: 1px;
+  
   }
   p {
-    padding: 0 0 130px 0;
+    padding: 0 0 230px 0;
   }
 }
 
