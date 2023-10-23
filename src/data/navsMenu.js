@@ -2,27 +2,33 @@ export default {
     headerNavMenu: [
     {
       href: "#",
-      content: 'Home'
+      content: 'Home',
+      bedge: false
     },
     {
       href: "#",
-      content: 'About'
+      content: 'About',
+      bedge: false
     },
     {
       href: "#",
-      content: 'Prices'
+      content: 'Prices',
+      bedge: false
     },
     {
       href: "#",
-      content: 'Courses'
+      content: 'Courses',
+      bedge: true
     },
     {
       href: "#",
-      content: 'Locations'
+      content: 'Locations',
+      bedge: false
     },
     {
       href: "#",
-      content: 'Blog'
+      content: 'Blog',
+      bedge: false
     }
   ],
   footerContacts: [

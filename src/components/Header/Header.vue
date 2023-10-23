@@ -41,6 +41,7 @@
             :key="`head-${index}`" 
             class="pb-1">
             <a :href="item.href">{{ item.content }}</a>
+            <span v-if="item.bedge" class="ms-1 badge bg-success">New</span>
             </li>
             <!-- cta button component  -->
             <CtaBtn :text="'book now'"/>
@@ -92,6 +93,7 @@ header {
     &:active, &:focus, &:hover {
       color: $main-color;
     }
+  
   }
   }
 
