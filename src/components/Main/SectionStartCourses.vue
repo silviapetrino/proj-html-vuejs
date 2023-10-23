@@ -36,7 +36,7 @@ export default {
 
     <!-- inside, there are the CoursesInfo card component and the learn more cards components -->
     <div class="bottom">
-      <div class="container-sp d-flex">
+      <div class="container-sp d-flex justify-content-between">
 
         <CoursesInfo />
 

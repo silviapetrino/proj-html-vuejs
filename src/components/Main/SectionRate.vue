@@ -16,7 +16,7 @@ export default {
 <!-- this props (percentage, rate) are from component: Generic card!  -->
 
   <section id="rate" class="container-sp">
-    <div class="wrapper-cards d-flex gap-2">
+    <div class="wrapper-cards d-flex gap-3">
       <GenericCard :percentage='95' :rate="'Pass Rate'"/>
       <GenericCard :percentage='100' :rate="'Referral Rate'"/>
       <GenericCard :percentage='0' :rate="'Accident Rate'"/>
@@ -34,6 +34,7 @@ export default {
 .wrapper-cards {
   position: absolute;
   top: -30px;
+  left: 35px;
 }
 
 </style>

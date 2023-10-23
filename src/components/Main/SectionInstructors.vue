@@ -32,7 +32,7 @@ export default {
       <div class="box-btn"><CtaBtn :text="'more about us'"/></div>
     </div>
 
-    <div id="instructors-names" class="container-sp d-flex gap-2">
+    <div id="instructors-names" class="container-sp d-flex justify-content-around">
 
       <GenericCard v-for="(instructor, index) in instructorsCards" :key="`instr-${index}`" :instructorCard="instructor"/>
      
@@ -64,13 +64,10 @@ section#instructors{
   p {
     color: $dark-gray;
     font-size: $main-size;
-    width: 55%;
-  }
-  .debug {
-    border: 1px solid black;
+    width: 75%;
   }
   .cta {
-    width: 400px;
+    width: 350px;
   }
 }
 
