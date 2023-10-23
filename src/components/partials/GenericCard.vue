@@ -102,9 +102,6 @@ export default {
     color: $dark-gray;
   }
  
-  .debug {
-    border: 1px solid black;
-  }
  
 }
 

@@ -1,6 +1,8 @@
 <script>
+
 export default {
-  name: 'main-jumbotron'
+  name: 'main-jumbotron',
+ 
 }
 </script>
 
@@ -12,6 +14,7 @@ export default {
       <h1>Drive with Avada</h1>
       <p>We offer the finest driving tuition money can buy</p>
     </div>
+    
   </section>
 
 </template>
@@ -26,6 +29,7 @@ section#jumbo {
   background-size: 100%;
   background-repeat: no-repeat;
   color: $white;
+  position: relative;
   .container-sp {
     padding: 290px 0 0 0;
   }
