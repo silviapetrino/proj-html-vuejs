@@ -10,7 +10,7 @@ dopo l'analisi del layout, ho definito i macro-componenti dell'App, come Header.
 
 ho identificato elementi comuni in termini stilistici e ho creato la cartella "scss" contenente un file principale chiamato "main". Questo file include istruzioni generali del sito (contenute in "_generals.scss") e variabili per la palette colori e i font.
 
-### Header:
+#### Header:
 
 ho strutturato quindi il componente Header, che include una navbar inizialmente statica , ho omesso il bottone per il momento.
 
