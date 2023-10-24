@@ -13,7 +13,7 @@ export default {
 
   <div class="wrapper-card">
     <div id="courses-info" class="card">
-    <img src="/public/new-corner.jpg" alt="new" width="100">
+    <img src="/new-corner.jpg" alt="new" width="100">
     <div class="text text-center py-3">
       <h2>Courses</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi minima cumque magni sequi aspernatur laborum, dolor perferendis? Ipsa ex perferendis, voluptatibus nostrum error ab esse</p>
