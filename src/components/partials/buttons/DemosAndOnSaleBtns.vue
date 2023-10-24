@@ -44,8 +44,8 @@ export default {
   justify-content: center;
   border: 0px;
   background-color: $white;
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   margin: 4px;
   border-radius: 5px;
   font-size: $main-size;
