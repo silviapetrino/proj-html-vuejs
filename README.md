@@ -1,6 +1,7 @@
   ## Drive with Avada
+-- il progetto prevdede una landing page non responsive (solo Desktop) creata con l'utilizzo di Vue.js (+ html e scss) --
 
-n.b. per i numeri delle sezioni si fa riferimento allo schema pubblicato in public/schema-app/Schema-App-Drive-With-Avada.jpg
+Per i numeri delle sezioni indicati successivamente, si fa riferimento allo schema pubblicato in public/schema-app/Schema-App-Drive-With-Avada.jpg
 
 #### Organizzazione dei Componenti:
 
